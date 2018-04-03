@@ -10,5 +10,6 @@ app.get('*', function(request, response) {
 });
 
 app.listen(port, function() {
+  console.log("Redirect to "+newBaseURL+" status:"+redirectStatusCode);
   console.log("Listening on " + port);
 });
